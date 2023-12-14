@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-mk3h
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/build-e2e-ewih-tenant/test-app-mdur/devfile-sample-python-basic-mk3h@sha256:37a15714b9d36d62ee02e6f86509a19d5a29154e578aec9422b48ad1332dca03
+        name: my-python
+        resources: {}
+status: {}
